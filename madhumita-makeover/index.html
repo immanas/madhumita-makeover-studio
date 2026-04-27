@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Madhumita's Makeover Studio & Academy — Award-winning bridal makeup artist in Kolkata. HD, Airbrush & Traditional Bridal Makeup. Book your appointment today.">
+<meta name="keywords" content="bridal makeup Kolkata, HD makeup West Bengal, wedding makeup artist, Madhumita makeover, bridal academy Kolkata">
+<meta property="og:title" content="Madhumita's Makeover Studio & Academy">
+<meta property="og:description" content="Award-winning bridal makeup artist in Kolkata. Timeless beauty crafted just for you.">
+<meta property="og:type" content="website">
+<title>Madhumita's Makeover Studio & Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/jpeg" href="assets/favicon.jpeg">
+<link rel="shortcut icon" type="image/jpeg" href="assets/favicon.jpeg">
+<link rel="apple-touch-icon" href="assets/favicon.jpeg">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ===== LANGUAGE BAR ===== -->
+<div class="lang-bar">
+  <span class="lang-label">LANGUAGE</span>
+  <button class="lang-btn active" onclick="setLang('en', event)">EN</button>
+  <button class="lang-btn" onclick="setLang('bn', event)">বাংলা</button>
+  <button class="lang-btn" onclick="setLang('hi', event)">हिंदी</button>
+</div>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="nav" id="mainNav">
+  <div class="logo">
+    Madhumita's Makeover
+    <span>Studio &amp; Academy — Est. 2022</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about"     data-i18n="nav_about">About</a></li>
+    <li><a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
+    <li><a href="#services"  data-i18n="nav_services">Services</a></li>
+    <li><a href="#pricing"   data-i18n="nav_pricing">Pricing</a></li>
+    <li><a href="#academy"   data-i18n="nav_academy">Academy</a></li>
+    <li><a href="#contact"   data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-i18n="nav_book">Book Now</button>
+</nav>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/8337092807" class="wa-float" target="_blank" rel="noopener" title="Chat on WhatsApp">💬</a>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-blur"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow" data-i18n="hero_eyebrow">Award Winning Bridal Makeup Artist</div>
+    <h1 class="hero-title">
+      Where Every <em>Bride</em><br>Becomes a <em>Masterpiece</em>
+    </h1>
+    <div class="hero-sub" data-i18n="hero_sub">Timeless Beauty, Crafted Just for You</div>
+    <p class="hero-desc" data-i18n="hero_desc">
+      Professional bridal & event makeup designed to enhance your natural radiance — for every skin tone, every tradition, every unforgettable moment.
+    </p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-i18n="btn_book">📅 Book Appointment</button>
+      <a href="https://wa.me/8337092807" class="btn-wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <a href="tel:+918337092807" class="btn-ghost">📞 Call Now</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item reveal-right"><div class="stat-num">500+</div><div class="stat-label">BRIDES TRANSFORMED</div></div>
+    <div class="stat-item reveal-right" style="transition-delay:0.2s"><div class="stat-num">5+</div><div class="stat-label">YEARS EXCELLENCE</div></div>
+    <div class="stat-item reveal-right" style="transition-delay:0.4s"><div class="stat-num">4.9★</div><div class="stat-label">GOOGLE RATING</div></div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <div class="scroll-text" data-i18n="scroll_text">SCROLL</div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about-section" id="about">
+  <div class="about-img-side">
+    <div class="about-img" id="aboutImg"></div>
+    <div class="about-img-overlay"></div>
+    <div class="about-img-badge">
+      <div class="badge-num">500+</div>
+      <div class="badge-text" data-i18n="badge_brides">BRIDES ADORNED</div>
+    </div>
+  </div>
+  <div class="about-content">
+    <div class="sec-label reveal" data-i18n="about_label">The Artist</div>
+    <h2 class="sec-title reveal" style="transition-delay:0.1s">Meet <em>Madhumita</em><br>Your Bridal Confidante</h2>
+    <div class="gold-line reveal" style="transition-delay:0.2s"></div>
+    <p class="sec-desc reveal" style="transition-delay:0.3s" data-i18n="about_desc">
+      With over 5 years of transforming brides across West Bengal, Madhumita brings a rare blend of artistry, precision, and warmth. Trained at the VLCC Institute of Beauty & Nutrition, she is a certified specialist in HD, Airbrush, and Traditional Bridal Makeup.
+    </p>
+    <div class="about-philosophy reveal" style="transition-delay:0.4s" data-i18n="about_philosophy">
+      "Every face tells a story. My brushes simply help write the most beautiful chapter."
+    </div>
+    <div class="about-tags reveal" style="transition-delay:0.5s">
+      <span class="tag" data-i18n="tag_certified">✦ Certified Artist</span>
+      <span class="tag" data-i18n="tag_hd">HD Makeup Specialist</span>
+      <span class="tag" data-i18n="tag_airbrush">Airbrush Expert</span>
+      <span class="tag" data-i18n="tag_hygienic">Hygienic Tools</span>
+    </div>
+    <div class="sec-label reveal" style="transition-delay:0.6s; margin-top:24px;" data-i18n="brands_label">Premium Brands Used</div>
+    <div class="brands-row reveal" style="transition-delay:0.7s">
+      <span class="brand-pill">MAC</span>
+      <span class="brand-pill">Huda Beauty</span>
+      <span class="brand-pill">Kryolan</span>
+      <span class="brand-pill">Lakmé</span>
+      <span class="brand-pill">NARS</span>
+      <span class="brand-pill">Bobbi Brown</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PORTFOLIO ===== -->
+<section class="portfolio-section" id="portfolio">
+  <div class="sec-label reveal" data-i18n="portfolio_label">Our Work</div>
+  <h2 class="sec-title reveal" style="transition-delay:0.1s">A Gallery of <em>Unforgettable</em><br>Transformations</h2>
+  <div class="filter-tabs reveal" style="transition-delay:0.2s">
+    <button class="ftab active" data-i18n="filter_all">All Looks</button>
+    <button class="ftab" data-i18n="filter_bridal">Bridal</button>
+    <button class="ftab" data-i18n="filter_hd">HD Makeup</button>
+    <button class="ftab" data-i18n="filter_party">Party</button>
+    <button class="ftab" data-i18n="filter_engagement">Engagement</button>
+    <button class="ftab" data-i18n="filter_reception">Reception</button>
+  </div>
+  <div class="gallery-grid reveal" style="transition-delay:0.3s">
+    <div class="gallery-item"><img class="gi-img" src="assets/bridal.png" alt="Bengali Bridal Look"><div class="gi-overlay"></div><div class="gi-label">Bengali Bridal</div></div>
+    <div class="gallery-item"><img class="gi-img" src="assets/hd glam.png" alt="HD Glam Makeup"><div class="gi-overlay"></div><div class="gi-label">HD Glam</div></div>
+    <div class="gallery-item"><img class="gi-img" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80" alt="Evening Party Makeup"><div class="gi-overlay"></div><div class="gi-label">Evening Party</div></div>
+    <div class="gallery-item"><img class="gi-img" src="assets/Engagement.png" alt="Engagement Makeup"><div class="gi-overlay"></div><div class="gi-label">Engagement</div></div>
+    <div class="gallery-item"><img class="gi-img" src="assets/evening.jpeg" alt="Reception Makeup"><div class="gi-overlay"></div><div class="gi-label">Reception</div></div>
+    <div class="gallery-item"><img class="gi-img" src="assets/haldi.png" alt="Haldi Look"><div class="gi-overlay"></div><div class="gi-label">Haldi Look</div></div>
+    <div class="gallery-item"><img class="gi-img" src="assets/hair.png" alt="Hair Styling"><div class="gi-overlay"></div><div class="gi-label">Hair Styling</div></div>
+    <div class="gallery-item"><img class="gi-img" src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&q=80" alt="Airbrush Finish"><div class="gi-overlay"></div><div class="gi-label">Airbrush Finish</div></div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services-section" id="services">
+  <div class="services-inner">
+    <div class="sec-label reveal" data-i18n="services_label">What We Offer</div>
+    <h2 class="sec-title reveal" style="transition-delay:0.1s">Services Crafted<br>for Your <em>Special Day</em></h2>
+    <div class="services-grid">
+      <div class="service-card reveal"><span class="sc-num">01</span><span class="sc-icon">💍</span><div class="sc-title" data-i18n="s1_title">Bridal Makeup</div><p class="sc-desc" data-i18n="s1_desc">A masterfully crafted bridal look that lasts through every emotional moment of your wedding day — flawless, long-wearing, and uniquely yours.</p><div class="sc-duration" data-i18n="s1_dur">DURATION: 2–3 HRS · TRIAL AVAILABLE</div></div>
+      <div class="service-card reveal" style="transition-delay:0.1s"><span class="sc-num">02</span><span class="sc-icon">✨</span><div class="sc-title" data-i18n="s2_title">HD Makeup</div><p class="sc-desc" data-i18n="s2_desc">High-definition perfection that photographs beautifully under every light — ideal for modern brides seeking a camera-ready glow.</p><div class="sc-duration" data-i18n="s2_dur">DURATION: 1.5–2.5 HRS · STUDIO READY</div></div>
+      <div class="service-card reveal" style="transition-delay:0.2s"><span class="sc-num">03</span><span class="sc-icon">🌸</span><div class="sc-title" data-i18n="s3_title">Airbrush Makeup</div><p class="sc-desc" data-i18n="s3_desc">Ultra-light, skin-like finish using cutting-edge airbrush technology — buildable coverage that feels weightless all day long.</p><div class="sc-duration" data-i18n="s3_dur">DURATION: 1.5–2 HRS · SWEAT-PROOF</div></div>
+      <div class="service-card reveal" style="transition-delay:0.3s"><span class="sc-num">04</span><span class="sc-icon">💐</span><div class="sc-title" data-i18n="s4_title">Engagement & Mahendi Makeup</div><p class="sc-desc" data-i18n="s4_desc">Soft yet sophisticated — a luminous look for the day you say yes, crafted to complement your engagement ceremony perfectly. Soft and vibrant mehendi makeup designed for daytime functions with fresh tones that enhance festive outfits and natural beauty.</p><div class="sc-duration" data-i18n="s4_dur">DURATION: 1–1.5 HRS · DAY-READY</div></div>
+      <div class="service-card reveal" style="transition-delay:0.4s"><span class="sc-num">05</span><span class="sc-icon">🎉</span><div class="sc-title" data-i18n="s5_title">Party & Event Makeup</div><p class="sc-desc" data-i18n="s5_desc">From sangeet nights to cocktail evenings — bold, glamorous looks that ensure you're the one everyone remembers.</p><div class="sc-duration" data-i18n="s5_dur">DURATION: 1–2 HRS · ALL OCCASIONS</div></div>
+      <div class="service-card reveal" style="transition-delay:0.5s"><span class="sc-num">06</span><span class="sc-icon">👑</span><div class="sc-title" data-i18n="s6_title">Hair Styling & Saree Draping</div><p class="sc-desc" data-i18n="s6_desc">Complete your look with expert hair styling and precision saree draping — traditional elegance with a modern touch.</p><div class="sc-duration" data-i18n="s6_dur">DURATION: 45–90 MIN · ADD-ON AVAILABLE</div></div>
+      <div class="service-card reveal" style="transition-delay:0.6s"><span class="sc-num">07</span><span class="sc-icon">✨</span><div class="sc-title" data-i18n="s7_title">Glass Finish Makeup</div><p class="s7-desc">Ultra-dewy glass skin makeup designed to create a smooth, radiant, and luminous bridal glow perfect for modern photography.</p><div class="sc-duration">DURATION: 1.5–2 HRS · DEWY FINISH</div></div>
+      <div class="service-card reveal" style="transition-delay:0.8s"><span class="sc-num">08</span><span class="sc-icon">👰</span><div class="sc-title" data-i18n="s8_title">Non-Bengali Bridal Look</div><p class="s8-desc">Customized bridal makeup tailored to match various regional traditions, outfits, and jewelry styles beyond Bengali bridal looks.</p><div class="sc-duration">DURATION: 2–3 HRS · CUSTOM STYLE</div></div>
+      <div class="service-card reveal" style="transition-delay:0.9s"><span class="sc-num">09</span><span class="sc-icon">🌿</span><div class="sc-title" data-i18n="s9_title">ALL Parlour Works </div><p class="s9-desc"></p><div class="sc-duration">DURATION: 1–1.5 HRS · DAY FUNCTION</div></div>
+      <div class="service-card reveal" style="transition-delay:0.6s"><span class="sc-num">10</span><span class="sc-icon">✨</span><div class="sc-title" data-i18n="s6_title">Glass Finish Makeup</div><p class="s10-desc">Ultra-dewy glass skin makeup designed to create a smooth, radiant, and luminous bridal glow perfect for modern photography.</p><div class="sc-duration">DURATION: 1.5–2 HRS · DEWY FINISH</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="pricing-section" id="pricing">
+  <div class="sec-label reveal">Best Packages</div>
+
+  <h2 class="sec-title reveal" style="transition-delay:0.1s">
+    Choose Your <em>Perfect</em><br>Bridal Package
+  </h2>
+
+  <p class="sec-desc reveal" style="transition-delay:0.2s">
+    Carefully designed bridal packages to suit different occasions, styles, and preferences. Contact us to customize the perfect package for your special day.
+  </p>
+
+  <div class="pricing-grid">
+
+    <!-- Package 1 -->
+    <div class="price-card reveal">
+
+      <div class="pc-name">
+        Glow Starter Package
+      </div>
+
+      <div class="pc-tagline">
+        Best for Engagements, Parties & Mehendi Functions
+      </div>
+
+      <div class="pc-price">
+        Contact for Details
+      </div>
+
+      <div class="pc-from">
+        CUSTOMIZABLE PACKAGE
+      </div>
+
+      <div class="pc-divider"></div>
+
+      <ul class="pc-features">
+        <li>HD Foundation & Contouring</li>
+        <li>Eye Makeup (Smokey / Natural)</li>
+        <li>Glass Finish or Soft Glam Look</li>
+        <li>Perfect for Day & Evening Events</li>
+      </ul>
+
+      <button class="btn-primary" style="width:100%"
+        onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Contact Now
+      </button>
+
+    </div>
+
+    <!-- Package 2 MOST POPULAR -->
+    <div class="price-card featured reveal" style="transition-delay:0.15s">
+
+      <div class="price-badge">
+        MOST POPULAR
+      </div>
+
+      <div class="pc-name">
+        Bridal Radiance Package
+      </div>
+
+      <div class="pc-tagline">
+        Complete Bridal Experience for Wedding Day
+      </div>
+
+      <div class="pc-price">
+        Contact for Details
+      </div>
+
+      <div class="pc-from">
+        FULL BRIDAL PACKAGE
+      </div>
+
+      <div class="pc-divider"></div>
+
+      <ul class="pc-features">
+        <li>HD + Airbrush Bridal Makeup</li>
+        <li>Hair Styling (Bun / Open / Braided)</li>
+        <li>Saree Draping or Western Styling</li>
+        <li>Waterproof Long-Lasting Base</li>
+        <li>Complimentary Touch-Up Kit</li>
+        <li>Pre-Wedding Trial Session</li>
+      </ul>
+
+      <button class="btn-primary" style="width:100%"
+        onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Contact Now
+      </button>
+
+    </div>
+
+    <!-- Package 3 -->
+    <div class="price-card reveal" style="transition-delay:0.3s">
+
+      <div class="pc-name">
+        Destination Luxury Package
+      </div>
+
+      <div class="pc-tagline">
+        Ideal for Destination & Multi-Day Weddings
+      </div>
+
+      <div class="pc-price">
+        Contact for Details
+      </div>
+
+      <div class="pc-from">
+        PREMIUM BRIDAL PACKAGE
+      </div>
+
+      <div class="pc-divider"></div>
+
+      <ul class="pc-features">
+        <li>Full Bridal + Bridesmaids Makeup</li>
+        <li>Non-Bengali & Western Bridal Looks</li>
+        <li>2-Day or Multi-Day Coverage</li>
+        <li>Premium International Brands</li>
+        <li>HD Photo & Video Ready Finish</li>
+      </ul>
+
+      <button class="btn-primary" style="width:100%"
+        onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Contact Now
+      </button>
+
+    </div>
+    <!-- Package 2 UNDERRATED -->
+<div class="price-card reveal" style="transition-delay:0.1s">
+
+  <div class="price-badge">
+    UNDERRATED PACKAGE
+  </div>
+
+  <div class="pc-name">
+    Classic Beauty Package
+  </div>
+
+  <div class="pc-tagline">
+    Perfect Balance of Elegance & Affordability
+  </div>
+
+  <div class="pc-price">
+    Contact for Details
+  </div>
+
+  <div class="pc-from">
+    VALUE FOR MONEY PACKAGE
+  </div>
+
+  <div class="pc-divider"></div>
+
+  <ul class="pc-features">
+    <li>HD or Soft Glam Makeup</li>
+    <li>Basic Hair Styling Included</li>
+    <li>Natural Skin Finish Look</li>
+    <li>Ideal for Small Functions & Events</li>
+    <li>Long-Lasting Lightweight Base</li>
+  </ul>
+
+  <button class="btn-primary" style="width:100%"
+    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+    Contact Now
+  </button>
+
+</div>
+
+  </div>
+</section>
+<!-- ===== WHY CHOOSE ===== -->
+<section class="why-section" id="why">
+  <div class="sec-label reveal" data-i18n="why_label">Our Promise</div>
+  <h2 class="sec-title reveal" style="transition-delay:0.1s">Why Brides Choose<br><em>Madhumita's</em></h2>
+  <div class="why-grid">
+    <div class="why-item reveal"><span class="why-icon">🎓</span><div class="why-title" data-i18n="w1">Certified Professional</div><p class="why-desc" data-i18n="w1d">VLCC-certified with international training in HD, Airbrush & Bridal techniques.</p></div>
+    <div class="why-item reveal" style="transition-delay:0.1s"><span class="why-icon">🌿</span><div class="why-title" data-i18n="w2">Skin-Safe Products</div><p class="why-desc" data-i18n="w2d">Only dermatologist-approved, cruelty-free products — safe for all skin types.</p></div>
+    <div class="why-item reveal" style="transition-delay:0.2s"><span class="why-icon">🧴</span><div class="why-title" data-i18n="w3">Sterile Hygiene</div><p class="why-desc" data-i18n="w3d">Disposable applicators, UV-sanitized tools, and strict hygienic protocols every time.</p></div>
+    <div class="why-item reveal" style="transition-delay:0.3s"><span class="why-icon">⏰</span><div class="why-title" data-i18n="w4">Always Punctual</div><p class="why-desc" data-i18n="w4d">Your wedding timeline is sacred. We arrive early, prepare thoroughly, never keep you waiting.</p></div>
+    <div class="why-item reveal" style="transition-delay:0.4s"><span class="why-icon">🎨</span><div class="why-title" data-i18n="w5">Personalized Looks</div><p class="why-desc" data-i18n="w5d">No two brides are alike. Every look is tailored to your features, outfit, and personal aesthetic.</p></div>
+    <div class="why-item reveal" style="transition-delay:0.5s"><span class="why-icon">📍</span><div class="why-title" data-i18n="w6">Doorstep Service</div><p class="why-desc" data-i18n="w6d">We come to you — home, hotel, or banquet hall. Anywhere in Kolkata and beyond.</p></div>
+  </div>
+</section>
+
+<!-- ===== HYGIENE ===== -->
+<section class="hygiene-section">
+  <div class="hygiene-inner">
+    <div class="reveal-left">
+      <div class="sec-label" data-i18n="hygiene_label">Safety First</div>
+      <h2 class="sec-title">Our Hygiene &amp; Safety <em>Standards</em></h2>
+      <p class="sec-desc" style="margin-top:16px" data-i18n="hygiene_desc">Your health and safety is our non-negotiable priority. We follow the highest standards in the industry.</p>
+    </div>
+    <div class="hygiene-list reveal-right">
+      <div class="hygiene-item"><div class="hi-check">✦</div><div class="hi-text"><h4 data-i18n="hy1">UV-Sanitized Brush Set</h4><p data-i18n="hy1d">Every brush UV-sanitized and cleaned with hospital-grade solution between clients.</p></div></div>
+      <div class="hygiene-item"><div class="hi-check">✦</div><div class="hi-text"><h4 data-i18n="hy2">Single-Use Applicators</h4><p data-i18n="hy2d">Disposable mascara wands, lip applicators, and sponges — always fresh, always new.</p></div></div>
+      <div class="hygiene-item"><div class="hi-check">✦</div><div class="hi-text"><h4 data-i18n="hy3">Allergy Patch Test</h4><p data-i18n="hy3d">Complimentary patch test offered to all new clients to prevent allergic reactions.</p></div></div>
+      <div class="hygiene-item"><div class="hi-check">✦</div><div class="hi-text"><h4 data-i18n="hy4">No Product Sharing</h4><p data-i18n="hy4d">Products are decanted individually — your makeup is only used on you, always.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCATIONS ===== -->
+<section class="locations-section" id="locations">
+  <div class="sec-label reveal" data-i18n="loc_label">Service Area</div>
+  <h2 class="sec-title reveal" style="transition-delay:0.1s">We Come to <em>Your City</em>,<br>Your Venue, Your Door</h2>
+  <div class="locations-grid">
+    <div class="location-map reveal-left">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14755.090021736118!2d87.299999!3d22.34601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d44c9f4f0b1b1%3A0x4f7e6c5b6a7f5e0!2sKharagpur%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" title="Studio Location"></iframe>
+    </div>
+    <div class="reveal-right">
+      <div class="location-list">
+        <div class="location-item"><div class="loc-dot"></div><div class="loc-name">Kharagapur</div><div class="loc-tag">STUDIO BASE</div></div>
+        <div class="location-item"><div class="loc-dot"></div><div class="loc-name">Medinipur</div><div class="loc-tag">HOME VISITS</div></div>
+        <div class="location-item"><div class="loc-dot"></div><div class="loc-name">Kolkata</div><div class="loc-tag">HOME VISITS</div></div>
+        <div class="location-item"><div class="loc-dot"></div><div class="loc-name">Howrah</div><div class="loc-tag">HOME VISITS</div></div>
+        <div class="location-item"><div class="loc-dot"></div><div class="loc-name">Belda</div><div class="loc-tag">HOME VISITS</div></div>
+        <div class="location-item"><div class="loc-dot"></div><div class="loc-name">Across West Bengal</div><div class="loc-tag">DESTINATION</div></div>
+      </div>
+      <p class="loc-note" data-i18n="loc_note">Destination bridal makeup available across West Bengal, Odisha, and beyond. Travel charges applicable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACADEMY ===== -->
+<section class="academy-section" id="academy">
+  <div class="academy-inner">
+    <div class="sec-label reveal" data-i18n="academy_label">Learn the Art</div>
+    <h2 class="sec-title reveal" style="transition-delay:0.1s">Madhumita's <em>Makeup Academy</em> —<br>Shape Your Career in Beauty</h2>
+    <div class="academy-grid">
+      <div class="course-list">
+        <div class="course-item reveal"><div class="ci-name" data-i18n="c1">Professional Bridal Makeup Course</div><div class="ci-meta"><span class="ci-tag" data-i18n="c1_dur">3 MONTHS</span><span class="ci-tag" data-i18n="c1_cert">CERTIFIED</span><span class="ci-tag" data-i18n="c1_mode">HANDS-ON</span></div></div>
+        <div class="course-item reveal" style="transition-delay:0.1s"><div class="ci-name" data-i18n="c2">HD & Airbrush Masterclass</div><div class="ci-meta"><span class="ci-tag">1 MONTH</span><span class="ci-tag">CERTIFIED</span></div></div>
+        <div class="course-item reveal" style="transition-delay:0.2s"><div class="ci-name" data-i18n="c3">Hair Styling & Saree Draping</div><div class="ci-meta"><span class="ci-tag">6 WEEKS</span><span class="ci-tag">CERTIFIED</span></div></div>
+        <div class="course-item reveal" style="transition-delay:0.3s"><div class="ci-name" data-i18n="c4">Party Makeup Crash Course</div><div class="ci-meta"><span class="ci-tag">2 WEEKS</span><span class="ci-tag">BEGINNER</span></div></div>
+      </div>
+      <div>
+        <div class="awards-grid">
+          <div class="award-item reveal"><div class="award-icon">🏆</div><div><div class="award-name" data-i18n="a1">Best Bridal Makeup Artist — West Bengal</div><div class="award-from" data-i18n="a1f">Beauty Excellence Awards 2024</div></div></div>
+          <div class="award-item reveal" style="transition-delay:0.1s"><div class="award-icon">🎓</div><div><div class="award-name" data-i18n="a2">Basic to Advance Bridal Diploma Master Course</div><div class="award-from">Institute of Beauty & Nutrition</div></div></div>
+          <div class="award-item reveal" style="transition-delay:0.2s"><div class="award-icon">⭐</div><div><div class="award-name" data-i18n="a3">Google 4.9/5 Rated Studio</div><div class="award-from" data-i18n="a3f">Based on 180+ verified reviews</div></div></div>
+          <div class="award-item reveal" style="transition-delay:0.3s"><div class="award-icon">📸</div><div><div class="award-name" data-i18n="a4">Featured in BridalAsia Magazine</div><div class="award-from" data-i18n="a4f">Top 10 Bridal Studios — 2023</div></div></div>
+        </div>
+        <button class="btn-primary" style="margin-top:28px" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-i18n="btn_academy">Enquire About Courses</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq-section" id="faq">
+  <div class="sec-label reveal" data-i18n="faq_label">Questions</div>
+  <h2 class="sec-title reveal" style="transition-delay:0.1s">Frequently Asked<br><em>Questions</em></h2>
+  <div class="faq-grid">
+    <div class="faq-item reveal"><div class="faq-q" data-i18n="q1">How long does bridal makeup last? <span>+</span></div><p class="faq-a" data-i18n="a1_faq">Our bridal makeup is formulated to last 14–18 hours. We use premium waterproof, long-wearing bases and setting sprays designed for Indian weather conditions.</p></div>
+    <div class="faq-item reveal" style="transition-delay:0.1s"><div class="faq-q" data-i18n="q2">Do you travel to the venue? <span>+</span></div><p class="faq-a" data-i18n="a2_faq">Absolutely. We provide home and venue visits across Kolkata and surrounding areas. Destination weddings across West Bengal are also welcome — travel charges apply.</p></div>
+    <div class="faq-item reveal" style="transition-delay:0.2s"><div class="faq-q" data-i18n="q3">How early should I book? <span>+</span></div><p class="faq-a" data-i18n="a3_faq">We recommend booking at least 3–6 months in advance for bridal appointments, especially for peak wedding season (October–February). Slots fill quickly!</p></div>
+    <div class="faq-item reveal" style="transition-delay:0.3s"><div class="faq-q" data-i18n="q4">Is a trial session available? <span>+</span></div><p class="faq-a" data-i18n="a4_faq">Yes — a bridal trial session is included in our Radiance and Luxury packages. We strongly recommend it to finalize your look before the big day.</p></div>
+    <div class="faq-item reveal" style="transition-delay:0.4s"><div class="faq-q" data-i18n="q5">Do you provide touch-up services? <span>+</span></div><p class="faq-a" data-i18n="a5_faq">Yes. Touch-up kits are provided with our bridal packages. Extended touch-up attendance at the venue can be arranged at an additional charge.</p></div>
+    <div class="faq-item reveal" style="transition-delay:0.5s"><div class="faq-q" data-i18n="q6">What brands do you use? <span>+</span></div><p class="faq-a" data-i18n="a6_faq">We exclusively use MAC, Huda Beauty, Kryolan, NARS, Bobbi Brown, and Lakmé Pro — ensuring skin-safe, high-performance results every time.</p></div>
+  </div>
+</section>
+
+<!-- ===== BLOG ===== -->
+<section class="blog-section" id="blog">
+  <div class="sec-label reveal" data-i18n="blog_label">Beauty Journal</div>
+  <h2 class="sec-title reveal" style="transition-delay:0.1s">Bridal Beauty <em>Tips &amp; Secrets</em></h2>
+  <div class="blog-grid">
+    <div class="blog-card reveal"><div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80')"></div><div class="blog-body"><div class="blog-tag" data-i18n="bl1_tag">BRIDAL TIPS</div><div class="blog-title" data-i18n="bl1_title">Skincare Routine to Start 3 Months Before Your Wedding</div><p class="blog-excerpt" data-i18n="bl1_ex">The secret to flawless bridal makeup begins with the skin underneath. Here is a step-by-step guide...</p></div></div>
+    <div class="blog-card reveal" style="transition-delay:0.15s"><div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80')"></div><div class="blog-body"><div class="blog-tag" data-i18n="bl2_tag">MAKEUP GUIDE</div><div class="blog-title" data-i18n="bl2_title">How to Choose the Right Bridal Makeup Style for Your Face Shape</div><p class="blog-excerpt" data-i18n="bl2_ex">From oval to heart-shaped — learn which makeup techniques enhance your natural features best...</p></div></div>
+    <div class="blog-card reveal" style="transition-delay:0.3s"><div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1607748862156-7c548e7e98f4?w=600&q=80')"></div><div class="blog-body"><div class="blog-tag" data-i18n="bl3_tag">TRENDS 2025</div><div class="blog-title" data-i18n="bl3_title">Top 7 Bridal Makeup Trends Taking Over Indian Weddings in 2025</div><p class="blog-excerpt" data-i18n="bl3_ex">Glass skin, blurred lips, and dewy finishes — discover what India's most stylish brides are choosing...</p></div></div>
+  </div>
+</section>
+
+<!-- ===== SOCIAL ===== -->
+<section class="social-section">
+  <div class="sec-label" style="justify-content:center" data-i18n="social_label">Follow Our Journey</div>
+  <h2 class="sec-title reveal" style="transition-delay:0.1s; text-align:center">Beautiful Moments,<br>Every Single <em>Day</em></h2>
+  <div class="social-links">
+    <a href="https://www.instagram.com/dalapatimadhumita117/" class="soc-link" target="_blank" rel="noopener">📸 Instagram</a>
+    <a href="https://www.facebook.com/share/1byKaq6rzp/" class="soc-link" target="_blank" rel="noopener">👍 Facebook</a>
+    <a href="https://youtube.com" class="soc-link" target="_blank" rel="noopener">▶ YouTube</a>
+    <a href="https://pinterest.com" class="soc-link" target="_blank" rel="noopener">📌 Pinterest</a>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="sec-label reveal" data-i18n="contact_label">Get in Touch</div>
+    <h2 class="sec-title reveal" style="transition-delay:0.1s">Let's Begin Your<br><em>Bridal Journey</em> Together</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="ci-item reveal"><div class="ci-icon">📍</div><div><div class="ci-label" data-i18n="ci_addr">STUDIO ADDRESS</div><div class="ci-val">390/1, Jhapatapur, South Side<br>Kharagpur, West Bengal- 721301</div></div></div>
+        <div class="ci-item reveal" style="transition-delay:0.1s"><div class="ci-icon">📞</div><div><div class="ci-label" data-i18n="ci_phone">PHONE & WHATSAPP</div><div class="ci-val"><a href="tel:+918337092807" style="color:inherit;text-decoration:none">+91 83370 92807</a></div></div></div>
+        <div class="ci-item reveal" style="transition-delay:0.2s"><div class="ci-icon">📧</div><div><div class="ci-label" data-i18n="ci_email">EMAIL</div><div class="ci-val"><a href="mailto:madhumitasmakeover1@gmail.com" style="color:inherit;text-decoration:none">madhumitasmakeover1@gmail.com</a></div></div></div>
+        <div class="ci-item reveal" style="transition-delay:0.3s"><div class="ci-icon">🕒</div><div><div class="ci-label" data-i18n="ci_hours">WORKING HOURS</div><div class="ci-val">Mon–Sat: 8:00 AM – 11:00 PM<br>Sun: 8:00 AM – 12:00 AM</div></div></div>
+      </div>
+      <form class="contact-form reveal" style="transition-delay:0.2s" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <div class="form-row">
+          <div class="form-group"><label data-i18n="f_name">Your Name</label><input type="text" name="name" placeholder="Full Name" required></div>
+          <div class="form-group"><label data-i18n="f_phone">Phone Number</label><input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label data-i18n="f_date">Event Date</label><input type="date" name="event_date"></div>
+          <div class="form-group"><label data-i18n="f_service">Service Required</label>
+            <select name="service">
+              <option value="" data-i18n="f_sel">Select Service</option>
+              <option>Bridal Makeup</option>
+              <option>HD Makeup</option>
+              <option>Airbrush Makeup</option>
+              <option>Engagement Makeup</option>
+              <option>Haldi Makeup</option>
+              <option>Party Makeup</option>
+              <option>Hair Styling</option>
+              <option>Academy Enquiry</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label data-i18n="f_loc">Event Location</label><input type="text" name="location" placeholder="Venue / City"></div>
+        </div>
+        <div class="form-group"><label data-i18n="f_msg">Your Message</label><textarea name="message" placeholder="Tell us about your dream look, any skin concerns, or special requests..."></textarea></div>
+        <button type="submit" class="submit-btn" data-i18n="f_submit">Send Enquiry →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Madhumita's Makeover</div>
+      <p class="footer-desc" data-i18n="footer_desc">Kharagpur's premier bridal makeup studio & academy — where every brush stroke is a labour of love.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/dalapatimadhumita117/" target="_blank" rel="noopener">📸</a>
+        <a href="https://www.facebook.com/share/1byKaq6rzp/" target="_blank" rel="noopener">👍</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener">▶</a>
+      </div>
+    </div>
+    <div class="footer-col"><h4 data-i18n="ft_services">Services</h4><ul><li><a href="#services" data-i18n="f_s1">Bridal Makeup</a></li><li><a href="#services" data-i18n="f_s2">HD Makeup</a></li><li><a href="#services" data-i18n="f_s3">Airbrush</a></li><li><a href="#services" data-i18n="f_s4">Party Makeup</a></li><li><a href="#services" data-i18n="f_s5">Hair Styling</a></li></ul></div>
+    <div class="footer-col"><h4 data-i18n="ft_studio">Studio</h4><ul><li><a href="#about" data-i18n="ft_about">About Madhumita</a></li><li><a href="#portfolio" data-i18n="ft_port">Portfolio</a></li><li><a href="#pricing" data-i18n="ft_price">Pricing</a></li><li><a href="#academy" data-i18n="ft_acad">Academy</a></li><li><a href="#blog" data-i18n="ft_blog">Blog</a></li></ul></div>
+    <div class="footer-col"><h4 data-i18n="ft_contact">Contact</h4><ul><li><a href="tel:+918337092807">+91 8337092807</a></li><li><a href="mailto:madhumita@makeoverstudio.in">madhumita@makeoverstudio.in</a></li><li><a href="#locations" data-i18n="ft_loc">Service Areas</a></li><li><a href="#faq" data-i18n="ft_faq">FAQ</a></li></ul></div>
+    <div class="footer-col"><h4 data-i18n="ft_services">Location</h4><ul><li><a href="https://maps.app.goo.gl/xwwjgseDmGnoGCzG8" data-i18n="f_s1">Location</a></li><li><a href="https://maps.app.goo.gl/xwwjgseDmGnoGCzG8" data-i18n="f_s2"></a></li><li><a href="#services" data-i18n="f_s3">Airbrush</a></li><li><a href="#services" data-i18n="f_s4">Party Makeup</a></li><li><a href="#services" data-i18n="f_s5">Hair Styling</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Madhumita's Makeover Studio & Academy. All rights reserved.</span>
+    <span data-i18n="ft_crafted">Crafted with love in Kolkata</span>
+  </div>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
