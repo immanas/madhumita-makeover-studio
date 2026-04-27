@@ -10,11 +10,9 @@
 **A premium, fully responsive bridal makeup studio website — delivered as a freelance project.**
 Multilingual · Parallax · Advanced Animations · Netlify Forms · Zero Dependencies
 
-[🌐 Live Demo](https://madhumita-makeover.netlify.app) · [📸 Screenshots](#-screenshots) · [✨ Features](#-features) · [🚀 Deploy](#-deployment)
+[🌐 Live Demo](https://madhumita-makeover.netlify.app) · [✨ Features](#-features) · [🚀 Deploy](#-deployment)
 
 </div>
-
----
 
 ## 📌 Project Overview
 
@@ -30,8 +28,6 @@ The goal was to deliver a luxury-grade website that reflects the premium nature 
 | **Deployment** | Netlify |
 | **Languages Supported** | English · Bengali (বাংলা) · Hindi (हिंदी) |
 | **Status** | ✅ Delivered & Live |
-
----
 
 ## ✨ Features
 
@@ -77,8 +73,6 @@ The goal was to deliver a luxury-grade website that reflects the premium nature 
 - Google Fonts loaded via CDN (Cormorant Garamond + Jost)
 - No npm, no webpack, no React — opens directly in browser
 
----
-
 ## 📁 Folder Structure
 
 ```
@@ -94,8 +88,6 @@ madhumita-makeover/
 └── assets/
     └── images/             ← Replace with client's real photos
 ```
-
----
 
 ## 🖥️ Run Locally
 
@@ -142,8 +134,6 @@ git push -u origin main
 # Every push to main auto-deploys ✅
 ```
 
----
-
 ## 🎨 Design System
 
 | Token | Value |
@@ -168,8 +158,6 @@ git push -u origin main
 - [ ] Replace Google Maps embed URL with exact studio location
 - [ ] Add `favicon.svg` in `assets/` folder
 
----
-
 ## 📦 Tech Stack
 
 | Technology | Usage |
@@ -181,23 +169,18 @@ git push -u origin main
 | Netlify | Hosting + Forms (no backend) |
 | Unsplash | Placeholder photography (replace with client photos) |
 
----
-
 ## 👨‍💻 Built By
 
 **Manas** — Cloud & DevOps Engineer · Freelance Web Developer  
 📍 Kolkata, India  
-🔗 [GitHub](https://github.com/YOUR_USERNAME) · [LinkedIn](https://linkedin.com/in/YOUR_LINKEDIN)
+🔗 [GitHub](https://github.com/immanas) · [LinkedIn](https://linkedin.com/in/YOUR_LINKEDIN)
 
 > *This project was built and delivered as a freelance engagement. Client identity shared with permission.*
-
----
 
 ## 📄 License
 
 This project is delivered exclusively to the client.  
 The source code is shared on GitHub **for portfolio purposes only.**  
-Not licensed for reuse, resale, or redistribution without permission.
 
 ---
 
