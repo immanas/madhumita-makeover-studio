@@ -10,7 +10,7 @@
 **A premium, fully responsive bridal makeup studio website — delivered as a freelance project.**
 Multilingual · Parallax · Advanced Animations · Netlify Forms · Zero Dependencies
 
-[🌐 Live Demo](https://madhumita-makeover.netlify.app) · [✨ Features](#-features) · [🚀 Deploy](#-deployment)
+[🌐 Live Demo](https://madhumitas-makeover.netlify.app/) · [✨ Features](#-features) · [🚀 Deploy](#-deployment)
 
 </div>
 
